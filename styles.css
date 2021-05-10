@@ -1,0 +1,278 @@
+* {
+  font-family: sans-serif;
+}
+
+header div {
+  background-image: url("https://www.barcelonacodeschool.com/files/pics/cur_files/squares.svg");
+}
+/* nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+} */
+#mobileNav {
+  display: none;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+nav li {
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #fff;
+  opacity: 0.9;
+}
+
+#mobileNav {
+  background-color: black;
+  color: white;
+}
+
+.hamburger {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-content {
+  background-color: black;
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+}
+
+.hamburger-content a {
+  color: white;
+}
+
+.hamburger:hover .hamburger-content {
+  display: block;
+  /* animation: popup .5s ease-in-out both; */
+}
+
+.hamburger span {
+  padding: 5px;
+  transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  display: block;
+  transform: rotate(90deg);
+  font-size: 2em;
+}
+
+.hamburger:hover span {
+  transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  padding: 2vw 10vw;
+}
+
+h1 {
+  font-size: 30px;
+  padding: 3em 5em;
+  margin: 0;
+  color: #333333;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  color: #333333;
+}
+p {
+  font-size: 14px;
+  color: #333333;
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 16px;
+  margin-bottom: 2em;
+}
+
+button {
+  border: 1px #333333 solid;
+  background-color: transparent;
+  padding: 0.5em;
+  margin: 1em 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  box-shadow: -3px 3px #000;
+  -webkit-transform: translate(3px, -3px);
+  transform: translate(3px, -3px);
+  outline: none;
+}
+
+iframe {
+  box-shadow: -3px 3px #000;
+  width: 100%;
+}
+
+footer {
+  padding: 3vw 10vw;
+}
+footer a {
+  text-decoration: none;
+}
+
+.social-media-links p {
+  display: inline;
+  padding-right: 0.5em;
+  font-size: 13px;
+}
+
+.section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.grid4 div {
+  flex: 0 1 25%;
+  padding-right: 1em;
+}
+
+.grid3 div {
+  flex: 0 1 33%;
+  padding-right: 1em;
+}
+
+.grid2 div {
+  flex: 0 1 50%;
+  padding-right: 1em;
+}
+
+a[href*="mailto"] {
+  background-color: yellow;
+}
+
+.dark-bg {
+  background-color: black;
+  color: #fff;
+}
+
+.dark-bg p {
+  color: #fff;
+}
+
+.dark-bg a,
+a:active,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+.partners img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8vw;
+  padding: 0 1em 2em 0;
+  filter: grayscale(100%);
+}
+
+.option-selection > div {
+  box-shadow: -3px 3px #000;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  padding: 1em;
+}
+
+.option-selection h3 {
+  margin: 0;
+}
+.option-selection .section-wrapper div {
+  padding-right: 12vw;
+  box-sizing: border-box;
+}
+
+.chat {
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  padding: 1em;
+  cursor: pointer;
+  position: fixed;
+  bottom: 3vw;
+  right: 2vw;
+}
+
+.far {
+  font-size: 2em;
+}
+
+@media all and (max-width: 500px) {
+  #desktopNav {
+    display: none;
+  }
+  #mobileNav {
+    display: block;
+  }
+  h1 {
+    font-size: 1.5em;
+    padding: 1em;
+  }
+  section {
+    padding: 5px;
+  }
+  .section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid4 div,
+  .grid3 div,
+  .grid2 div {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  h1 {
+    padding: 2em;
+  }
+  section {
+    padding: 2vw;
+  }
+  .section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid4 div,
+  .grid3 div,
+  .grid2 div {
+    padding-bottom: 2em;
+  }
+}
